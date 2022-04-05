@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!--All declared here to avoid the literal string issue-->
     <string name="app_name">Closet</string>
     <string name="type_spinner">Clothing Type</string>
@@ -10,22 +10,27 @@
     <string name="size">Size</string>
     <string name="closet_display">Closet Display</string>
     <string name="back">Back</string>
+    <string name="clothing_type">Clothing Type</string>
+    <string name="clothing_color">Clothing Color</string>
+    <string name="description">Description</string>>
+    <string name="description_size_pattern_etc">Description size pattern etc</string>
+    <string name="enter_clothing_color">Enter Clothing Color</string>
+    <string name="new_clothing_item">New Clothing Item</string>
 
     <!--All of the items for our Spinners/dropdown menus-->
     <string-array name="clothing_type_array">
-        <item>Clothing Type</item>
+        <item> </item>
         <item>Shirts</item>
         <item>Pants</item>
         <item>Shoes</item>
         <item>Accessories</item>
-        <item>Jupiter</item>
         <item>Dresses</item>
         <item>Outerwear</item>
         <item>Undergarments</item>
     </string-array>
 
     <string-array name="clothing_color_array">
-        <item>Color</item>
+        <item> </item>
         <item>Yellow</item>
         <item>Yellow-Green</item>
         <item>Green</item>
@@ -65,4 +70,15 @@
         <item>School</item>
         <item>Swimwear</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

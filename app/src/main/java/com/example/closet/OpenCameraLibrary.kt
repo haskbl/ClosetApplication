@@ -13,13 +13,14 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 class OpenCameraLibrary : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //setContentView(R.layout.activity_open_camera_library)
         setContentView(R.layout.activity_open_camera_library)
         setClickListeners()
 
         val addNewClothingItem = findViewById<Button>(R.id.backButton)
         addNewClothingItem.setOnClickListener {
-            val intent = Intent(this@OpenCameraLibrary, EditClothingDetailsPage::class.java)
-            startActivity(intent)
+           // val intent = Intent(this@OpenCameraLibrary, EditClothingDetailsPage::class.java)
+            //startActivity(intent)
 
         }
     }

@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.closet">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
+        android:name=".ClosetApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,19 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Closet">
         <activity
+            android:name=".ui.RegistrationPage"
+            android:exported="false" />
+        <!--
+        <activity
             android:name=".OpenCameraLibrary"
-            android:exported="false" />
-        <activity
-            android:name=".Shirt2Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Shirt1Activity"
             android:exported="false" />
         <activity
             android:name=".EditClothingDetailsPage"
             android:exported="false" />
+        -->
         <activity
-            android:name=".ClosetDisplayPage"
+            android:name=".MainClosetDisplayPage"
             android:exported="false" />
         <activity
             android:name=".LoginPage"
@@ -36,7 +38,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.provider"
+            android:authorities="com.example.closet.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
